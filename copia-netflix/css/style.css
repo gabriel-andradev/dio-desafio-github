@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+body {
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--preto);
+    color: white;
+}
+
+main {
+    margin: 0 4px;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    margin-right: 70px;
+}
+
+header .logo {
+    margin: 25px 45px;
+    /* color: var(--vermelho); */
+    /* font-family: "Arial Black", Times; */
+    /* font-size: 40px; */
+}
+
+header .logo img {
+    height: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .94) 100%), url(/img/capa/breakingBadCapa.jpg);
+    height: 600px;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4%
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+
+.titulo {
+    margin-top: 18%;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
